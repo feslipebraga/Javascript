@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 6</title>
+    <style>
+        body{
+            font: 12pt arial;
+        }
+        button{
+            font-size: 12pt;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body text="blue" link="blue" vlink="blue">
+    <h1 align="center">Somando dois números</h1>
+    <button onclick="b()">Iniciar a soma</button>
+    <p align="center" id="p">O resultado vem <font color="red">aqui...</font></p>
+    <p><a href="http://www.instagram.com/feslipebraga" target="_blank">Siga-me no instagram</a></p>
+    <p><a href="mailto:feslipebraga@gmail.com">Mande-me um e-mail.</a></p>
+    <p></p>
+    <img src="taylor.jpeg"
+    style="width: 600px">
+    <script>
+        function b(){
+            let n1 = Number(prompt("Informe um número:"))
+            let n2 = Number(prompt("Informe outro número:"))
+            let n = n1 + n2
+            let res = document.querySelector('p#p')
+            res.innerHTML = `<b>A soma entre ${n1} e ${n2} é igual a ${n}<b>`
+        }
+    </script>
+</body>
+</html>

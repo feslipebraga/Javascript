@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 5</title>
+    <style>
+        body{
+            font: 12pt arial;
+        }
+        button{
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com números</h1>
+    <button onclick="b()">Clique para calcular</button>
+    <p id="resultado">O resultado vem aqui...</p>
+    <script>
+        alert("Bem vindo(a) ao meu site!")
+        function b(){
+            let numero = prompt("Informe um número")
+            let res = document.querySelector('p#resultado')
+            let dobro = numero * 2
+            let metade = numero / 2
+            res.innerHTML = `O dobro de ${numero} é ${dobro} e sua metade é ${metade}`
+        }
+    </script>
+</body>
+</html>

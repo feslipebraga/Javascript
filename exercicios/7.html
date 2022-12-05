@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 7</title>
+    <style>
+        body{
+            font: 12pt arial;
+        }
+        button{
+            width: 300px;
+            font-size: 12pt;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Média do aluno v1.0</h1>
+    <button onclick="calcular()">Calcular média</button>
+    <p id="resultado">O resultado vai aparecer aqui...</p>
+    <script>
+        function calcular(){
+            let nome = prompt("Nome do aluno:")
+            let n1 = Number(prompt(`Primeira nota de ${nome}:`))
+            let n2 = Number(prompt(`Segunda nota de ${nome}:`))
+            let media = (n1 + n2) / 2
+            let resultado = document.querySelector('p#resultado')
+            resultado.innerHTML = `<p>Calculando a média de <font color="blue">Felipe...</font></p>As notas obtidas foram <b>${n1}</b> e <b>${n2}</b>.<p>A média final será <b>${media}</b> </p>`
+        }
+    </script>
+</body>
+</html>

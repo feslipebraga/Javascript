@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 9</title>
+    <style>
+        body{
+            font: 12pt arial;
+        }
+        button{
+            font: 16px arial;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contador de cliques</h1>
+    <button onclick="contar()">Clique em mim</button>
+    <button onclick="zerar()">Zerar o contador</button>
+    <p id="contagem">O contador está com <b>0</b> cliques</p>
+    <script>
+        let contador = 0
+        let contagem = document.querySelector("p#contagem")
+        function contar(){
+            contador ++
+            contagem.innerHTML = `O contador está com <b><font color='blue'>${contador}</font></b> cliques`
+        }
+        function zerar(){
+            contador = 0
+            contagem.innerHTML = "O contador foi <b><font color='red'>zerado</font></b>!"
+        }
+    </script>
+</body>
+</html>

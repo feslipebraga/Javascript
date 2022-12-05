@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando 2 números</title>
+    <style>
+        p{
+            font-size: 20;
+        }
+        button{
+            background-color: springgreen;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vamos somar 2 valores númericos?</h1>
+    <button onclick="resultado()">Clique aqui para começar a soma</button>
+    <section id="res">
+        <p>O resultado aparecerá aqui</p>
+    </section>
+    <script>
+        function resultado(){
+            let n1 = Number(prompt('Informe um número'))
+            let n2 = Number(prompt('Informe outro número'))
+            soma = n1 + n2
+            let x = document.querySelector('section#res')
+            x.innerHTML = `<p>A soma entre ${n1} e ${n2} é ${soma}</p>`
+        }
+    </script>
+</body>
+</html>

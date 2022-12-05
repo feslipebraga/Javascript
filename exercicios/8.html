@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 8</title>
+    <style>
+        body{
+            font: 12pt arial;
+        }
+        button{
+            font: 12pt arial;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vários cálculos em JS</h1>
+    <button onclick="b()">Clique para calcular</button>
+    <p id="res">Resultado aqui!</p>
+    <script>
+        function b(){
+            let numero = Number(prompt("Informe um número:"))
+            let resultado = document.querySelector('p#res')
+            resultado.innerHTML = `<p>O número a ser analisado aqui será o <b>${numero}</b></p><hr>`
+            resultado.innerHTML += `<p>O seu valor absoluto é ${Math.abs(numero)}</p>`
+            resultado.innerHTML += `<p>A sua parte inteira é ${Math.trunc(numero)}</p>`
+            resultado.innerHTML += `<p>O valor inteiro mais próximo ${Math.round(numero)}</p>`
+            resultado.innerHTML += `<p>A sua raiz quadrada é ${Math.sqrt(numero)}</p>`
+            resultado.innerHTML += `<p>A sua raiz cúbica é ${Math.cbrt(numero)}</p>`
+            resultado.innerHTML += `<p>O valor de ${numero}² é ${Math.pow(numero, 2)}</p>`
+            resultado.innerHTML += `<p>O valor de ${numero}³ é ${Math.pow(numero, 3)}</p>`
+        }
+    </script>
+</body>
+</html>
