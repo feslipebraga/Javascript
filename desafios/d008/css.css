@@ -1,0 +1,10 @@
+body{
+    font-size: 12pt arial;
+    background-color: aqua;
+}
+
+button{
+    font-size: large arial;
+    padding: 5%;
+    background-color: antiquewhite;
+}

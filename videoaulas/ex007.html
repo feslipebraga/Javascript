@@ -22,12 +22,12 @@
     <input type="number" id="n1"> + 
     <input type="number" id="n2">
     <input type="button" value="Somar" onclick="somar()">
-    <div id="resultado">Resultado</div>
+    <p id="resultado">Resultado</p>
     <script>
         function somar(){
             var t1 = document.querySelector("input#n1")
             var t2 = document.querySelector("input#n2")
-            var resultado = document.querySelector("div#resultado")
+            var resultado = document.querySelector("p#resultado")
             var n1 = Number(t1.value)
             var n2 = Number(t2.value)
             var n = n1 + n2
