@@ -1,0 +1,27 @@
+body{
+    background: rgb(88, 88, 250);
+    font: 15pt arial;
+}
+header{
+    color: white;
+    text-align: center;
+}
+section{
+    background: white;
+    border-radius: 10px;    /* arredona */
+    padding: 15px;  /* preenchimento */
+    width: 500px;   /* largura */
+    margin: auto;   /* centraliza */
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.456); /* horizontal, vertical, ofuscamento */
+}
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}

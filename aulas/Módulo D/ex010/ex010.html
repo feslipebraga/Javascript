@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>SISTEMA DE MULTA</h1>
+    Velocidade do carro: <input type="text" name="veltxt" id="veltxt"> Km/h
+    <input type="button" value="Conferir" onclick="botao()">
+    <div id="text"></div>
+    <script>
+        function botao(){
+            var speed = document.querySelector('input#veltxt')
+            var velocidade = Number(speed.value)
+            var texto = document.querySelector('div#text')
+            texto.innerHTML = `<p><b>Você passou no radar da Av. do Estado com:</b> <mark>${velocidade} Km/h`
+            if (velocidade > 60){
+                texto.innerHTML += `<p>Você excedeu a velocidade permitida. MULTADO!`
+            } else{
+                texto.innerHTML += `<p>Você passou dentro do limite da rota. Boa viagem :)`
+            }
+            texto.innerHTML += `<p>O DETRAN-SC agradece sua visita, tenha uma excelente noite!`
+        }
+    </script>
+</body>
+</html>
