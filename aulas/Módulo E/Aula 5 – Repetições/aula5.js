@@ -1,0 +1,27 @@
+/* WHILE */
+// ESTRUTURA DE REPETICAO COM TESTE LOGICO NO INICIO
+function comerPizza(){
+    while (tiverPizza()){
+        comerFatia()
+    }
+}
+
+var x = 1
+while (x <= 10) {
+    console.log(`x = ${x}`)
+    x ++
+}
+
+/* DO WHILE */
+// ESTRUTURA DE REPETICAO COM TESTE LOGICO NO FINAL
+
+var c = 1
+do {
+    console.log(`c = ${c}`)
+    c ++
+} while (c <= 10)
+
+/* FOR */
+for(var y = 1; y <= 10; y++){
+    console.log(`y = ${y}`)
+}
