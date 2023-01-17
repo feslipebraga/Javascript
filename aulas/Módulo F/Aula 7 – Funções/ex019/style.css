@@ -1,0 +1,20 @@
+body{
+    font: 15pt arial;
+    color: white;
+    background-color: rgb(145, 234, 204);
+    text-align: center;
+}
+section{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 8px 8px 20px;
+}
+select{
+    padding: 50px;
+}
+footer{
+    font-style: italic;
+}
