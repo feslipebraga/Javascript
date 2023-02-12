@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Múltiplas ações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Múltiplas ações</h1>
+    </header>
+    <section>
+        <div>
+            <p>1˚ valor: <input type="number" name="n" id="n1" style="padding: 10px;"></p>
+            <p>2˚ valor: <input type="number" name="n" id="n2" style="padding: 10px;"></p>
+            <input type="radio" name="calculo" id="soma">
+            <label for="soma">Somar</label>
+            <input type="radio" name="calculo" id="subt">
+            <label for="subt">Subtrair</label>
+            <input type="radio" name="calculo" id="mult">
+            <label for="mult">Multiplicar</label>
+            <input type="radio" name="calculo" id="div">
+            <label for="div">Dividir</label>
+            <p><input type="button" value="Clique pra iniciar" id="botao" onclick="iniciar()"></p>
+            <p id="txt"></p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Felipe Braga</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

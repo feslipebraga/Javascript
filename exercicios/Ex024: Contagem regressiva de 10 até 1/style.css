@@ -1,0 +1,22 @@
+body{
+    font: 15pt arial;
+    text-align: center;
+    background-color: aqua;
+}
+section{
+    background-color: azure;
+    padding: 50px;
+    border-radius: 20px;
+    width: 500px;
+    margin: auto;
+    border: 1px black solid;
+}
+input{
+    padding: 20px;
+    background-color: black;
+    color: pink;
+}   
+
+footer{
+    font-style: italic;
+}

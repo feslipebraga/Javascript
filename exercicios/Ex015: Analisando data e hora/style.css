@@ -1,0 +1,17 @@
+body{
+    font: 15pt arial;
+    text-align: center;
+}
+section{
+    background-color: rgb(247, 209, 216);
+    padding: 50px;
+    border-radius: 20px;
+    width: 500px;
+    margin: auto;
+    border: 1px solid rgb(182, 238, 255)
+}
+input {
+    padding: 50px;
+    margin: 1px solid black;
+    font-size: 18px;
+}

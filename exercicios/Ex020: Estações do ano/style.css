@@ -1,0 +1,20 @@
+body{
+    font: 15pt arial;
+    text-align: center;
+    background-color: aquamarine;
+}
+section{
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    width: 500px;
+    margin: auto;
+    border: 1px black solid;
+}
+input{
+    padding: 20px;
+}   
+
+footer{
+    font-style: italic;
+}
